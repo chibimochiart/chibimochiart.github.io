@@ -1,0 +1,335 @@
+body {
+    
+    min-height: 100vh;
+    background: url('background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bahnschrift Light";
+    color: rgb(208, 255, 208);
+    text-shadow: 0px 0px 3px black;
+    font-size: 20px;
+    align-items: center;
+}
+
+h1,h2,h3,h4 {
+    font-family: Bahnschrift;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(91, 209, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgb(7, 0, 32);
+    font-family: Bahnschrift;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    text-shadow: 0px 0px 5px darkblue;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 1.5px;
+    background:  white;
+    transition: .2s;
+    box-shadow: 0px 0px 5px darkblue;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.styledTable{
+    position: relative;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid #009879;
+    transition: .2s;
+}
+
+.styledTable th{
+    padding: 7px 9px;
+}
+.styledTable tr {
+    padding: 7px 9px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.top-item {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.dans {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+}
+
+/* Parallax */
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: rgb(0, 31, 93, 0.8);
+    z-index:1;
+    width: 100%;
+    padding: 0 50px;
+    
+}
+
+.main_container h1 {
+    margin-left: 5vh;
+    font-size: 7vh;
+}
+
+h3,h4 {
+    margin-left: 5vh;
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+.main_container a {
+    margin-right: 5vh;
+    transition: .5s;
+}
+
+.main_container a:hover {
+    margin-top: -2vh;
+}
+
+.other_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 60vh;
+    background-color: rgb(0, 31, 93, 0.4);
+    z-index:1;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.other_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 60vh;
+    background-color: rgb(0, 31, 93, 0.4);
+    z-index:1;
+    width: 100%;
+    padding: 0 50px;
+}
+.other_content * {
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px  rgb(0, 31, 93);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.other_content p {
+    padding: 0 15%;
+}
+
+.other_content a{  
+    position: absolute;
+    align-items: center;
+    align-content: center;
+}
+
+.other_content b{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.other_content h1 {
+    font-size: 7vh;
+    font-weight: bolder;
+}
+
+.other_content h2 {
+    font-size: 7vh;
+    font-weight: bolder;
+    margin-top: -25px;
+}
+
+.vtuber_container {
+    height: 100vh;
+    z-index:1;
+    width: 100%;
+    padding: 0 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vtuber_container a {
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.vtuber_content_right {
+    text-align: right;
+    padding-top: 5vh;
+}
+
+.vtuber_content_right h1 {
+    padding-top: 5vh;
+    color: #005a48;
+    text-shadow: 0 0 5px rgb(221, 221, 221);
+}
+
+.vtuber_content_right * {
+    padding-top: 5vh;
+    color: #005a48;
+    text-shadow: 0 0 5px rgb(221, 221, 221);
+    font-weight: bold;
+    font-size: 25px;
+}
+.vtuber_content_right a:hover {
+    font-size: 30px;
+    color: #08005a;
+}
+
+.vtuber_content_left {
+    text-align: left;
+    padding-top: 5vh;
+}
+
+.vtuber_content_left h1 {
+    padding-top: 5vh;
+    color: #08005a;
+    text-shadow: 0 0 5px #b4fff0;
+}
+
+.vtuber_content_left * {
+    padding-top: 5vh;
+    color: #08005a;
+    text-shadow: 0 0 5px #b4fff0;
+    font-weight: bold;
+    font-size: 25px;
+}
+.vtuber_content_left a:hover {
+    font-size: 30px;
+    color: #005a48;
+}
+
+.solid_content {
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.solid_content h4 {
+    text-align:center;
+    padding: 10px;
+    text-align: justify;
+}
+
+.divider {
+    text-align:center;
+    padding:10px 80px;
+    text-align: justify;
+}
+
+.parallax {
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .parallax h1 {
+    font-size: 7vh;
+  }
+
+  .btn {
+    position: absolute;
+    margin: 0vh 70%;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 12px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #005a48;
+    text-shadow: 0 0 5px #00cca3;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background: #00cca3;
+    border: 2px solid #00cca3;
+    color: white; 
+  }
+
+  .btncenter {
+    position: absolute;
+    align-content: center;
+    margin: 90vh 40%;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 12px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #005a48;
+    text-shadow: 0 0 5px #00cca3;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .btncenter:hover {
+    background: #00cca3;
+    border: 2px solid #00cca3;
+    color: white; 
+  }
